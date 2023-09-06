@@ -32,6 +32,18 @@ Plug 'kyazdani42/nvim-tree.lua'
 " ~~youtube~~ comments 
 Plug 'preservim/nerdcommenter'
 
+" LSP Support
+Plug 'neovim/nvim-lspconfig'             " Required
+Plug 'williamboman/mason.nvim',          " Optional
+Plug 'williamboman/mason-lspconfig.nvim' " Optional
+
+" Autocompletion
+Plug 'hrsh7th/nvim-cmp'     " Required
+Plug 'hrsh7th/cmp-nvim-lsp' " Required
+Plug 'L3MON4D3/LuaSnip'     " Required
+
+Plug 'VonHeikemen/lsp-zero.nvim', {'branch': 'v2.x'}
+
 call plug#end()
 
 " Enable line numbers
@@ -62,6 +74,8 @@ lua require('treesitter-setup')
 
 " Terminal setup
 lua require("toggleterm").setup{ size = vim.o.columns * 0.4, open_mapping = [[<c-`>]], direction = 'vertical',}
+
+lua require('lsp-zero-setup')
 
 " Remove the themes background color
 highlight Normal guibg=NONE ctermbg=NONE
