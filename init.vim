@@ -32,9 +32,12 @@ Plug 'kyazdani42/nvim-tree.lua'
 " ~~youtube~~ comments 
 Plug 'preservim/nerdcommenter'
 
+" Github Cockpilot
+Plug 'github/copilot.vim'
+
 " LSP Support
 Plug 'neovim/nvim-lspconfig'             " Required
-Plug 'williamboman/mason.nvim',          " Optional
+Plug 'williamboman/mason.nvim'          " Optional
 Plug 'williamboman/mason-lspconfig.nvim' " Optional
 
 " Autocompletion
