@@ -7,7 +7,8 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " Fuzzy finder
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
+
 
 " Terminal
 Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.*'}
@@ -79,6 +80,8 @@ lua require('treesitter-setup')
 lua require("toggleterm").setup{ size = vim.o.columns * 0.4, open_mapping = [[<c-`>]], direction = 'vertical',}
 
 lua require('lsp-zero-setup')
+
+lua require('keybinds')
 
 " Remove the themes background color
 highlight Normal guibg=NONE ctermbg=NONE
