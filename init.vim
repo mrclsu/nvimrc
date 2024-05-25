@@ -34,7 +34,7 @@ Plug 'kyazdani42/nvim-tree.lua'
 Plug 'preservim/nerdcommenter'
 
 " Github Cockpilot
-Plug 'github/copilot.vim'
+" Plug 'github/copilot.vim'
 
 " LSP Support
 Plug 'neovim/nvim-lspconfig'             " Required
