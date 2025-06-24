@@ -13,12 +13,9 @@ Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
 " Terminal
 Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.*'}
 
-" Rainbow parantheses
-Plug 'p00f/nvim-ts-rainbow'
-
 " Theme
 Plug 'drewtempelmeyer/palenight.vim'
-Plug 'jeffkreeftmeijer/vim-dim'
+Plug 'rose-pine/neovim'
 
 " Tab bar
 Plug 'kyazdani42/nvim-web-devicons'
@@ -55,7 +52,7 @@ set number
 
 " Configure theme
 set background=dark
-colorscheme dim
+colorscheme rose-pine-moon 
 
 "if (has("termguicolors"))
   "set termguicolors
