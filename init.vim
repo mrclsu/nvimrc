@@ -9,7 +9,6 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
 
-
 " Terminal
 Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.*'}
 
@@ -43,7 +42,12 @@ Plug 'hrsh7th/nvim-cmp'     " Required
 Plug 'hrsh7th/cmp-nvim-lsp' " Required
 Plug 'L3MON4D3/LuaSnip'     " Required
 
+" TODO Migrate off of LSP Zero 
 Plug 'VonHeikemen/lsp-zero.nvim', {'branch': 'v2.x'}
+
+Plug 'ray-x/go.nvim'
+Plug 'ray-x/guihua.lua' 
+
 
 call plug#end()
 
@@ -59,7 +63,7 @@ colorscheme rose-pine-moon
 "endif
 
 " Load statusline
-lua require('lualine').setup({options = {icons_enabled = true, theme = 'palenight', component_separators = {'|', '|'},section_separators = {'', ''}}})
+lua require('lualine').setup({options = {icons_enabled = true, theme = 'rose-pine', component_separators = {'|', '|'},section_separators = {'', ''}}})
 
 " Load filetree
 lua require('nvim-tree-setup')
