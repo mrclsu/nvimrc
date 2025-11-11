@@ -43,7 +43,7 @@ Plug 'hrsh7th/cmp-nvim-lsp' " Required
 Plug 'L3MON4D3/LuaSnip'     " Required
 
 " TODO Migrate off of LSP Zero 
-Plug 'VonHeikemen/lsp-zero.nvim', {'branch': 'v2.x'}
+" Plug 'VonHeikemen/lsp-zero.nvim', {'branch': 'v2.x'}
 
 Plug 'ray-x/go.nvim'
 Plug 'ray-x/guihua.lua' 
