@@ -80,7 +80,6 @@ lua require('treesitter-setup')
 " Terminal setup
 lua require("toggleterm").setup{ size = vim.o.columns * 0.4, open_mapping = [[<c-`>]], direction = 'vertical',}
 
-lua require('lsp-zero-setup')
 
 lua require('keybinds')
 
