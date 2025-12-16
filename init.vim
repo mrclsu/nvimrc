@@ -33,17 +33,14 @@ Plug 'preservim/nerdcommenter'
 " Plug 'github/copilot.vim'
 
 " LSP Support
-Plug 'neovim/nvim-lspconfig'             " Required
-Plug 'williamboman/mason.nvim'          " Optional
-Plug 'williamboman/mason-lspconfig.nvim' " Optional
+Plug 'neovim/nvim-lspconfig'             
+Plug 'williamboman/mason.nvim'           
+Plug 'williamboman/mason-lspconfig.nvim' 
 
 " Autocompletion
 Plug 'hrsh7th/nvim-cmp'     " Required
 Plug 'hrsh7th/cmp-nvim-lsp' " Required
 Plug 'L3MON4D3/LuaSnip'     " Required
-
-" TODO Migrate off of LSP Zero 
-" Plug 'VonHeikemen/lsp-zero.nvim', {'branch': 'v2.x'}
 
 Plug 'ray-x/go.nvim'
 Plug 'ray-x/guihua.lua' 
@@ -77,9 +74,11 @@ let g:rainbow_active = 1
 " Treesitter setup
 lua require('treesitter-setup')
 
+" LSP stuff setup
+lua require('lsp-setup')
+
 " Terminal setup
 lua require("toggleterm").setup{ size = vim.o.columns * 0.4, open_mapping = [[<c-`>]], direction = 'vertical',}
-
 
 lua require('keybinds')
 
