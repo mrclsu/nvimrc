@@ -1,8 +1,9 @@
 require("mason").setup()
 
-require("mason-lspconfig").setup {
+local mason_lspconfig = require("mason-lspconfig").setup {
     automatic_enable = true
 }
+
 
 require('cmp').setup {
   sources = {
@@ -15,14 +16,14 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 local lspconfig = require("lspconfig")
 
-require("mason-lspconfig").setup_handlers({
-  -- default handler for every installed server
-  function(server_name)
-    lspconfig[server_name].setup({
-      capabilities = capabilities,
-    })
-  end
-})
+--require("mason-lspconfig").setup_handlers({
+  ---- default handler for every installed server
+  --function(server_name)
+    --lspconfig[server_name].setup({
+    --capabilities = capabilities,
+    --})
+  --end
+--})
 
 -- vim.lsp.enable('lua_ls')
 -- vim.lsp.enable('gleam')
