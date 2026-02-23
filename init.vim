@@ -50,6 +50,7 @@ call plug#end()
 
 " Enable line numbers
 set number
+set relativenumber
 
 " Configure theme
 set background=dark
@@ -87,7 +88,7 @@ highlight Normal guibg=NONE ctermbg=NONE
 " highlight NonText ctermbg=none
 
 " Configure tab stop
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab 
+set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 " Configure 
 " Restore vertical bar cursor shape on exit
