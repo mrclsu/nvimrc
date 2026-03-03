@@ -45,6 +45,7 @@ Plug 'L3MON4D3/LuaSnip'     " Required
 Plug 'ray-x/go.nvim'
 Plug 'ray-x/guihua.lua' 
 
+Plug 'kylechui/nvim-surround', {'tag': 'v4.*'}
 
 call plug#end()
 
